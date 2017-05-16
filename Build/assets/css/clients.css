@@ -1,0 +1,113 @@
+.clients-intro {
+  margin: 50px auto 10px auto;
+  font-size: 16px;
+  text-align: center;
+  width: 70%;
+  line-height: 1.4;
+  padding-bottom: 0px; }
+  .clients-intro .clients-title {
+    font-weight: 600;
+    font-size: 22px;
+    padding-bottom: 14px; }
+    @media screen and (min-width: 650px) {
+      .clients-intro .clients-title {
+        font-size: 24px;
+        padding-bottom: 5px; } }
+    @media screen and (min-width: 900px) {
+      .clients-intro .clients-title {
+        font-size: 26px;
+        padding-bottom: 5px; } }
+    @media screen and (min-width: 1110px) {
+      .clients-intro .clients-title {
+        font-size: 29px;
+        padding-bottom: 6px; } }
+  @media screen and (min-width: 450px) {
+    .clients-intro {
+      text-align: center; } }
+  @media screen and (min-width: 650px) {
+    .clients-intro {
+      font-size: 18px;
+      line-height: 1.45;
+      margin: 75px auto 0px auto; } }
+  @media screen and (min-width: 900px) {
+    .clients-intro {
+      font-size: 19px; } }
+  @media screen and (min-width: 1110px) {
+    .clients-intro {
+      font-size: 21px;
+      width: 680px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.clients {
+  margin: 0 auto 55px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 75%;
+  max-width: 1000px; }
+  @media screen and (min-width: 650px) {
+    .clients {
+      width: 70%; } }
+  @media screen and (min-width: 900px) {
+    .clients {
+      padding: 0 20px;
+      width: 100%; } }
+
+.clients-other {
+  margin: 27px auto 25px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 85%;
+  max-width: 1000px; }
+  @media screen and (min-width: 900px) {
+    .clients-other {
+      padding: 0 15px;
+      width: 100%; } }
+
+.client {
+  flex: 1 0 100%;
+  margin-bottom: 35px;
+  text-align: center;
+  margin: 5px auto 0 auto; }
+  .client .logo-title {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin: -28px auto 25px auto; }
+  .client.unfeatured {
+    flex: 1 0 100px;
+    margin: 0 12px 15px 12px; }
+  @media screen and (min-width: 450px) {
+    .client {
+      flex: 1 0 34%; } }
+  @media screen and (min-width: 900px) {
+    .client {
+      flex: 0 0 22%;
+      text-align: center; } }
+
+.client-logo {
+  max-height: 170px; }
+
+.button-featured {
+  display: inline-block;
+  margin: -24px auto 0 auto;
+  background-color: #eee;
+  padding: 8px 14px;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: .3s; }
+
+.unfeatured-box {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.unfeatured img {
+  flex: 1 0 70px;
+  max-height: 80px; }
