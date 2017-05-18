@@ -112,9 +112,9 @@ strong {
     margin-top: -16px;
     line-height: 1.25; }
   .project.right span {
-    left: 60%; }
+    left: 58%; }
   .project.left span {
-    left: 8%; }
+    left: 6%; }
   @media screen and (min-width: 450px) {
     .project.right span {
       left: 60%; }
@@ -154,7 +154,7 @@ strong {
 
 .simpsons-hp {
   background-image: url(../SimpsonsProjectImageL.jpg);
-  background-size: 125%;
+  background-size: 126%;
   background-repeat: no-repeat;
   background-position: 15% 25%; }
   @media screen and (min-width: 650px) {
@@ -175,7 +175,7 @@ strong {
   background-image: url(../JessicaProjectImageL.jpg);
   background-size: 119%;
   background-repeat: no-repeat;
-  background-position: 55% 17%; }
+  background-position: 73% 17%; }
   @media screen and (min-width: 450px) {
     .jessica-hp {
       background-size: 112%;
@@ -219,9 +219,9 @@ strong {
 
 .sharkweek-hp {
   background-image: url(../SharkweekProjectImageLv3.jpg);
-  background-size: 120%;
+  background-size: 115%;
   background-repeat: no-repeat;
-  background-position: 27% 50%; }
+  background-position: 10% 50%; }
   @media screen and (min-width: 540px) {
     .sharkweek-hp {
       background-size: 111%;

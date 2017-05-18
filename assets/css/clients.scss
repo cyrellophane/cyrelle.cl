@@ -12,7 +12,6 @@ $simpsons-color: #bfdfdb;
   width: 70%;
   line-height: 1.4;
   padding-bottom: 0px;
-  // border-bottom: 1px solid #000;
   .clients-title {
     font-weight: 600;
     font-size: 22px;
@@ -55,12 +54,6 @@ margin: 0 auto 55px auto;
   flex-flow: row wrap;
   justify-content: center;
   width: 75%;
-  // border: 1px solid #ccc;
-  // border-bottom: 1px solid #ccc;
-  // background-color: #eee;
-  // @media screen and (min-width: $breakpoint-smallish) {
-  //   justify-content: center;
-  // }
 max-width: 1000px;
 @media screen and (min-width: $breakpoint-small) {
   width: 70%;
@@ -77,12 +70,6 @@ margin: 27px auto 25px auto;
   flex-flow: row wrap;
   justify-content: center;
   width: 85%;
-  // border: 1px solid #ccc;
-  // border-bottom: 1px solid #ccc;
-  // background-color: #eee;
-  // @media screen and (min-width: $breakpoint-smallish) {
-  //   justify-content: center;
-  // }
 max-width: 1000px;
 @media screen and (min-width: $breakpoint-medium) {
   padding: 0 15px;
@@ -95,7 +82,6 @@ max-width: 1000px;
   margin-bottom: 35px;
   text-align: center;
       margin: 5px auto 0 auto;
-  // flex-basis: 200px;
   .logo-title {
     font-size: 14px;
     width: 100%;
@@ -131,12 +117,9 @@ background-color: #eee;
   position: relative;
   overflow:hidden;
   transition: .3s;
-  // border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .unfeatured-box {
-  // background-color: #cbe2eb;
-  // padding: 20px 0 20px 0;
   border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     margin-left: 20px;
@@ -146,5 +129,4 @@ background-color: #eee;
 .unfeatured img {
   flex: 1 0 70px;
     max-height: 80px;
-    // filter: grayscale(100%);
   }
