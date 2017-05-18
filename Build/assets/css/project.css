@@ -3,6 +3,8 @@
   width: 100%;
   justify-content: space-between;
   margin-bottom: 5px; }
+  .buttons.one-button {
+    justify-content: center; }
   @media screen and (min-width: 450px) {
     .buttons {
       justify-content: center; } }
@@ -11,20 +13,20 @@
       margin-bottom: 35px; } }
 
 .button {
-  margin: 0 0px 4px 0px;
+  margin: 0 0 4px;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  transition: .3s; }
+  transition: 0.3s; }
   .button.right:after {
     right: 100%; }
   .button.right:hover:after {
     right: 0; }
   .button:after {
     position: absolute;
-    transition: .3s;
+    transition: 0.3s;
     content: '';
     width: 0;
     bottom: 0;
@@ -36,7 +38,7 @@
       left: 0; }
   @media screen and (min-width: 450px) {
     .button {
-      margin: 0 12px 12px 12px; } }
+      margin: 0 12px 12px; } }
 
 p {
   font-size: 16px;
@@ -107,36 +109,36 @@ h2 + p {
     .project-intro {
       margin: 90px auto; } }
   .project-intro.smaller {
-    margin: 10px auto 40px auto; }
+    margin: 10px auto 40px; }
     @media screen and (min-width: 900px) {
       .project-intro.smaller {
         margin-bottom: 60px; } }
 
 .project-content {
-  padding: 25px 20px 25px 20px;
+  padding: 25px 20px;
   align-self: flex-start;
   text-align: center; }
   @media screen and (min-width: 650px) {
     .project-content .columns img {
-      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4); } }
-  .project-content .columns > .browser {
-    border-radius: 5px; }
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.4); } }
+  .project-content .columns .browser {
+    border-radius: 6px; }
     @media screen and (min-width: 650px) {
-      .project-content .columns > .browser {
+      .project-content .columns .browser {
         border-radius: 3px; } }
     @media screen and (min-width: 900px) {
-      .project-content .columns > .browser {
+      .project-content .columns .browser {
         border-radius: 5px; } }
   .project-content .browser {
     border-radius: 3px; }
     @media screen and (min-width: 650px) {
       .project-content .browser {
-        border-radius: 4px; } }
+        border-radius: 5px; } }
     @media screen and (min-width: 900px) {
       .project-content .browser {
-        border-radius: 5px; } }
+        border-radius: 7px; } }
   .project-content img {
-    box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0 33px rgba(0, 0, 0, 0.4); }
     @media screen and (min-width: 1200px) {
       .project-content img {
         max-width: 1160px; } }
@@ -166,11 +168,11 @@ h2 + p {
       .project-content.supplyco .button:hover {
         background-color: #496171; }
   .project-content.disco {
-    background-color: #d4bccf; }
+    background-color: #dcc5d8; }
     .project-content.disco .button {
-      background-color: #9e6893; }
+      background-color: #a86f9e; }
       .project-content.disco .button:hover {
-        background-color: #815377; }
+        background-color: #8e5685; }
   @media screen and (min-width: 650px) {
     .project-content {
       padding-top: 35px; } }
@@ -182,7 +184,7 @@ h2 + p {
       padding-top: 50px; } }
 
 .jessica img {
-  border-radius: 0px; }
+  border-radius: 0; }
   @media screen and (min-width: 665px) {
     .jessica img {
       width: 625px;
@@ -191,8 +193,8 @@ h2 + p {
 .sw-hero {
   padding: 0 20px;
   text-align: center;
-  background-color: #d4bccf;
-  overflow-x: hidden; }
+  background-color: #dcc5d8;
+  overflow: hidden; }
   .sw-hero img {
     max-width: none;
     width: 130%;

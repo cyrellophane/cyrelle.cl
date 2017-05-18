@@ -5,13 +5,16 @@ $breakpoint-large: 1160px;
 $simpsons-color: #bfdfdb;
 $jessica-color: #e8c0c2;
 $supplyco-color: #adbeca;
-$disco-color: #d4bccf;
-
+$disco-color: #dcc5d8;
 
 .buttons {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
+
+  &.one-button {
+    justify-content: center;
+  }
   @media screen and (min-width: $breakpoint-smallish) {
     justify-content: center;
   }
@@ -22,64 +25,59 @@ $disco-color: #d4bccf;
 }
 
 .button {
-  margin: 0 0px 4px 0px;
+  margin: 0 0 4px;
   padding: 20px;
-  // border: 1px solid rgba(0, 0, 0, 0.4);
   text-align: center;
-  // text-transform: uppercase;
   text-decoration: none;
   position: relative;
-  overflow:hidden;
-  transition: .3s;
+  overflow: hidden;
+  transition: 0.3s;
 
-  &.left {
-    &:hover {
-      // border-top-left-radius: 100px;
-      // border-bottom-left-radius: 100px;
-
-      // box-shadow: 0px 12px 27px rgba(0, 0, 0, 0.15);
-    }
-  }
   &.right {
     &:after {
       right: 100%;
     }
+
     &:hover {
       &:after {
         right: 0;
       }
     }
   }
+
   &:after {
     position: absolute;
-    transition: .3s;
+    transition: 0.3s;
     content: '';
     width: 0;
     bottom: 0;
     height: 3px;
-    // background: rgba(0, 0, 0, 0.4);
   }
+
   &:hover {
     cursor: pointer;
+
     &:after {
       width: 100%;
       left: 0;
     }
   }
   @media screen and (min-width: $breakpoint-smallish) {
-    margin: 0 12px 12px 12px;
+    margin: 0 12px 12px;
   }
 }
 
 p {
   font-size: 16px;
   line-height: 1.4;
+
   &.smaller {
     font-size: 14px;
   }
   @media screen and (min-width: $breakpoint-small) {
     font-size: 18px;
     line-height: 1.45;
+
     &.smaller {
       font-size: 16px;
     }
@@ -126,12 +124,10 @@ h1 {
 h2 {
   font-weight: 600;
   font-size: 18px;
-  // padding-top: 35px;
   padding-bottom: 7px;
   margin: 0 auto;
   @media screen and (min-width: $breakpoint-medium) {
     font-size: 21px;
-    // padding-top: 60px;
   }
   @media screen and (min-width: 1110px) {
     font-size: 23px;
@@ -148,26 +144,27 @@ h2 + p {
   @media screen and (min-width: $breakpoint-small) {
     margin: 90px auto;
   }
+
   &.smaller {
-    margin: 10px auto 40px auto;
+    margin: 10px auto 40px;
     @media screen and (min-width: $breakpoint-medium) {
-margin-bottom: 60px;
+      margin-bottom: 60px;
     }
   }
 }
 
-
 .project-content {
-  padding: 25px 20px 25px 20px;
+  padding: 25px 20px;
   align-self: flex-start;
+
   .columns {
     img {
       @media screen and (min-width: $breakpoint-small) {
-        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
       }
     }
-    > .browser {
-      border-radius: 5px;
+    .browser {
+      border-radius: 6px;
       @media screen and (min-width: $breakpoint-small) {
         border-radius: 3px;
       }
@@ -176,22 +173,24 @@ margin-bottom: 60px;
       }
     }
   }
+
   .browser {
     border-radius: 3px;
     @media screen and (min-width: $breakpoint-small) {
-      border-radius: 4px;
-    }
-    @media screen and (min-width: $breakpoint-medium) {
       border-radius: 5px;
     }
+    @media screen and (min-width: $breakpoint-medium) {
+      border-radius: 7px;
+    }
   }
-  img {
-    box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.4);
 
+  img {
+    box-shadow: 0 0 33px rgba(0, 0, 0, 0.4);
     @media screen and (min-width: 1200px) {
       max-width: 1160px;
     }
   }
+
   p {
     font-size: 14px;
     line-height: 1.35;
@@ -203,8 +202,10 @@ margin-bottom: 60px;
 
   &.simpsons {
     background-color: #bfdfdb;
+
     .button {
       background-color: darken($simpsons-color, 27%);
+
       &:hover {
         background-color: darken($simpsons-color, 37%);
       }
@@ -213,8 +214,10 @@ margin-bottom: 60px;
 
   &.jessica {
     background-color: #e8c0c2;
+
     .button {
       background-color: darken($jessica-color, 27%);
+
       &:hover {
         background-color: darken($jessica-color, 37%);
       }
@@ -223,8 +226,10 @@ margin-bottom: 60px;
 
   &.supplyco {
     background-color: #adbeca;
+
     .button {
       background-color: darken($supplyco-color, 27%);
+
       &:hover {
         background-color: darken($supplyco-color, 37%);
       }
@@ -232,9 +237,11 @@ margin-bottom: 60px;
   }
 
   &.disco {
-    background-color: #d4bccf;
+    background-color: #dcc5d8;
+
     .button {
       background-color: darken($disco-color, 27%);
+
       &:hover {
         background-color: darken($disco-color, 37%);
       }
@@ -253,17 +260,19 @@ margin-bottom: 60px;
 }
 
 .jessica img {
-  border-radius: 0px;
+  border-radius: 0;
   @media screen and (min-width: 665px) {
     width: 625px;
     max-width: 100%;
   }
 }
+
 .sw-hero {
   padding: 0 20px;
   text-align: center;
-  background-color:#d4bccf;
-  overflow-x: hidden;
+  background-color: #dcc5d8;
+  overflow: hidden;
+
   img {
     max-width: none;
     width: 130%;
@@ -274,7 +283,6 @@ margin-bottom: 60px;
       width: auto;
     }
   }
-
 }
 
 .caption {
@@ -282,22 +290,19 @@ margin-bottom: 60px;
   margin-top: 28px;
   font-size: 14px;
   line-height: 1.35;
-  // margin-left: 20px;
-  // margin-right: auto;
   padding-bottom: 28px;
-      margin-bottom: 60px;
-  // text-align: left;
+  margin-bottom: 60px;
   width: 100%;
+
   &:before {
-    content : "";
+    content: "";
     position: absolute;
     left: 40%;
     bottom: 0;
     height: 1px;
     width: 20%;
-    border-bottom:1px solid rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
   }
-
   @media screen and (min-width: $breakpoint-smallish) {
     width: 70%;
     text-align: center;
@@ -308,15 +313,11 @@ margin-bottom: 60px;
     font-size: 16px;
     width: 65%;
     line-height: 1.45;
-margin-bottom: 90px;
-    // margin: 35px auto;
-    // padding: 30px 75px;
+    margin-bottom: 90px;
   }
   @media screen and (min-width: $breakpoint-medium) {
     width: 60%;
-margin-bottom: 100px;
-    // padding: 30px 95px;
-    // line-height: 1.7;
+    margin-bottom: 100px;
   }
   @media screen and (min-width: 1110px) {
     width: 666px;
@@ -332,7 +333,6 @@ margin-bottom: 100px;
   padding-bottom: 50px;
   text-align: left;
   width: 100%;
-
   @media screen and (min-width: $breakpoint-smallish) {
     width: 70%;
     text-align: center;
@@ -344,8 +344,6 @@ margin-bottom: 100px;
     width: 65%;
     line-height: 1.45;
     padding-bottom: 70px;
-    // margin: 35px auto;
-    // padding: 30px 75px;
   }
   @media screen and (min-width: $breakpoint-medium) {
     width: 60%;
@@ -363,12 +361,14 @@ margin-bottom: 100px;
 
 .columns {
   margin: 0 auto;
+
   > div {
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
     column-break-inside: avoid;
     padding-bottom: 15px;
     padding-top: 15px;
+
     img {
       width: 100%;
     }
@@ -386,9 +386,8 @@ margin-bottom: 100px;
 }
 
 .second-column {
-padding-top: 40px;
-@media (min-width: $breakpoint-small) {
-  padding-top: 30px;
-
-}
+  padding-top: 40px;
+  @media (min-width: $breakpoint-small) {
+    padding-top: 30px;
+  }
 }

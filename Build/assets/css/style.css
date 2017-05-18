@@ -39,7 +39,7 @@ strong {
       margin: 0 auto; } }
 
 .top-nav {
-  padding: 24px 0 5px 0;
+  padding: 12px 0 5px 0;
   border-bottom: solid #ccc 1px; }
   .top-nav a {
     text-decoration: none; }
@@ -48,10 +48,16 @@ strong {
       border-bottom: solid #ccc 1px; } }
 
 .logo {
-  font-size: 19px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  opacity: 0.5; }
+  height: 21px;
+  display: block;
+  opacity: 0.6;
+  transition: opacity 0.3s; }
+  .logo:hover {
+    opacity: .9; }
+  .logo img {
+    align-self: baseline;
+    width: 121px;
+    height: 21px; }
 
 .menu {
   align-self: left;
@@ -61,9 +67,10 @@ strong {
   display: flex;
   padding-bottom: 6px;
   font-size: 14px; }
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 450px) {
     .menu {
-      align-self: flex-end;
+      align-self: flex-end baseline;
+      padding-top: 4px;
       width: 205px; } }
 
 .blurb {

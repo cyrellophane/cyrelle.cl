@@ -1,48 +1,21 @@
-  <DOCTYPE! html>
+  <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
 
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,500,600" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-<link rel='stylesheet' href='assets/css/style.css'>
-<link rel='stylesheet' href='assets/css/project.css'>
-<link rel='stylesheet' href='assets/css/clients.css'>
+<link rel='stylesheet' href='assets/a9c85ad8a1ea39a697f9d212779238dc.css'>
   <title>Portfolio for Cyrelle DeCou</title>
 </head>
 <body>
   <div class="top-nav responsive-columns">
-  <div class="logo">
-    Cyrelle DeCou
-  </div>
+  <a href="/" class="logo"><img src="assets/logo.svg" /></a>
   <div class="menu">
-    <a class='current-parent' href="index.html">Projects</a>
+    <a href="/">Projects</a>
     <a href="clients.html">Clients</a>
     <a href="assets/cyrelledecou_resume_2017_screen.pdf">Resume</a>
 
@@ -96,7 +69,7 @@
   </div>
 
   <div class="buttons">
-    <a class="current-parent button left" href="index.html">
+    <a class="button left" href="/">
       &larr; Back to Projects
     </a>
     <a class="button right" href="disco.html">
@@ -116,7 +89,7 @@
 
         </g>
       </svg></a>
-      <a href="https://www.instagram.com/cyrellophane/"><svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- <a href="https://www.instagram.com/cyrellophane/"><svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
         <g id="instagram">
           <circle class="bubble" cx="16.5" cy="16.5" r="15.5"/>
@@ -130,7 +103,7 @@
         <path d="M12.6395188,13.7979702 L14.0943459,13.7979702 L14.0943459,12.368522 C14.0943459,11.7376041 14.109985,10.7651365 14.5627368,10.162681 C15.0401203,9.52504276 15.6950075,9.0917808 16.8218045,9.0917808 C18.6574436,9.0917808 19.430406,9.35624454 19.430406,9.35624454 L19.066406,11.5363902 C19.066406,11.5363902 18.460391,11.3584998 17.8946466,11.3584998 C17.3285113,11.3584998 16.8218045,11.5636668 16.8218045,12.1356832 L16.8218045,13.7979702 L19.1422556,13.7979702 L18.980391,15.9271207 L16.8218045,15.9271207 L16.8218045,23.323013 L14.0943459,23.323013 L14.0943459,15.9271207 L12.6395188,15.9271207 L12.6395188,13.7979702" id="Fill-3"></path>
       </g>
 
-    </svg></a>
+    </svg></a> -->
 
   </div>
 </div>
