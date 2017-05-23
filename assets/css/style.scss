@@ -124,7 +124,7 @@ opacity: .9;
   position: relative;
   background-color: #ccc;
   height: 185px;
-  margin-top: 3px;
+  margin-top: 2px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -150,6 +150,7 @@ opacity: .9;
     }
   }
   @media screen and (min-width: $breakpoint-small) {
+    margin-top: 3px;
     height: 250px;
     span {
       font-size: 22px;
