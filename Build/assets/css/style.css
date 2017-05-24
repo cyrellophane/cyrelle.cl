@@ -289,18 +289,6 @@ strong {
   fill: #fff;
   stroke: #ccc; }
 
-#facebook:hover path {
-  fill: #3B5998; }
-#facebook:hover .bubble {
-  fill: #fff;
-  stroke: #ccc; }
-
-#instagram:hover path {
-  fill: #517FA4; }
-#instagram:hover .bubble {
-  fill: #fff;
-  stroke: #ccc; }
-
 #social {
   margin-top: 8px; }
   @media screen and (min-width: 650px) {

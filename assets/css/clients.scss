@@ -4,38 +4,27 @@ $breakpoint-medium: 900px;
 $breakpoint-large: 1160px;
 $simpsons-color: #bfdfdb;
 
-
 .clients-intro {
-  margin: 50px auto 10px auto;
-  font-size: 16px;
-  text-align: center;
-  width: 70%;
-  line-height: 1.4;
-  padding-bottom: 0px;
-  .clients-title {
-    font-weight: 600;
-    font-size: 22px;
-    padding-bottom: 14px;
-    @media screen and (min-width: $breakpoint-small) {
-      font-size: 24px;
-      padding-bottom: 5px;
-    }
-    @media screen and (min-width: $breakpoint-medium) {
-      font-size: 26px;
-      padding-bottom: 5px;
-    }
-    @media screen and (min-width: 1110px) {
-      font-size: 29px;
-      padding-bottom: 6px;
-    }
-  }
+  text-align: left;
+  // width: 86%;
+  margin: 50px 20px 20px;
   @media screen and (min-width: $breakpoint-smallish) {
-    text-align: center;
+    margin: 50px auto 3px;
+    width: 75%;
   }
+  @media screen and (min-width: $breakpoint-small) {
+    margin: 90px auto 10px;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 758px;
+  }
+}
+.other-clients {
+  text-align: center;
   @media screen and (min-width: $breakpoint-small) {
     font-size: 18px;
     line-height: 1.45;
-    margin: 75px auto 0px auto;
+    margin: 90px auto 0;
   }
   @media screen and (min-width: $breakpoint-medium) {
     font-size: 19px;
@@ -49,56 +38,65 @@ $simpsons-color: #bfdfdb;
 }
 
 .clients {
-margin: 0 auto 55px auto;
- display: flex;
+  margin: 0 auto 45px;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 75%;
-max-width: 1000px;
-@media screen and (min-width: $breakpoint-small) {
-  width: 70%;
-}
-@media screen and (min-width: $breakpoint-medium) {
-  padding: 0 20px;
-  width: 100%;
-}
+  width: 80%;
+  max-width: 1000px;
+  @media screen and (min-width: $breakpoint-small) {
+    width: 100%;
+    margin: 0 auto 65px;
+  }
+  @media screen and (min-width: $breakpoint-medium) {
+    padding: 0 20px;
+    width: 90%;
+  }
 }
 
 .clients-other {
-margin: 27px auto 25px auto;
- display: flex;
+  margin: 27px auto 50px;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 85%;
-max-width: 1000px;
-@media screen and (min-width: $breakpoint-medium) {
-  padding: 0 15px;
-  width: 100%;
-}
+  max-width: 1000px;
+  @media screen and (min-width: $breakpoint-medium) {
+    padding: 0 40px;
+    width: 100%;
+  }
 }
 
 .client {
-  flex: 1 0 100%;
-  margin-bottom: 35px;
+  flex: 1 0 40%;
   text-align: center;
-      margin: 5px auto 0 auto;
+  margin: 5px 10px 35px;
+  @media screen and (min-width: $breakpoint-small) {
+    // margin: 5px 16px 35px 16px;
+    justify-content: space-between;
+  }
+
   .logo-title {
     font-size: 14px;
     width: 100%;
     text-align: center;
-    margin: -28px auto 25px auto;
+    margin: -28px auto 25px;
   }
-  &.unfeatured {
-    flex: 1 0 100px;
-    margin: 0 12px 15px 12px;
 
-    }
-    @media screen and (min-width: $breakpoint-smallish) {
-  flex: 1 0 34%;
-    }
+  &.unfeatured {
+    flex: 1 0 70px;
+    margin: 0 14px 15px;
+  }
+  @media screen and (min-width: $breakpoint-smallish) {
+    flex: 1 0 30%;
+  }
+  @media screen and (min-width: $breakpoint-small) {
+    flex: 0 0 20%;
+    text-align: center;
+    justify-content: space-between;
+  }
   @media screen and (min-width: $breakpoint-medium) {
     flex: 0 0 22%;
-    text-align: center;
   }
 }
 
@@ -107,26 +105,26 @@ max-width: 1000px;
 }
 
 .button-featured {
-display: inline-block;
-margin: -24px auto 0 auto;
-background-color: #eee;
+  display: inline-block;
+  margin: -43px auto 0;
+  background-color: #eee;
   padding: 8px 14px;
   font-size: 13px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   position: relative;
-  overflow:hidden;
-  transition: .3s;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
 .unfeatured-box {
   border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.unfeatured img {
-  flex: 1 0 70px;
-    max-height: 80px;
+  border-top: 1px solid #ccc;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media screen and (min-width: $breakpoint-large) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1160px;
   }
+}

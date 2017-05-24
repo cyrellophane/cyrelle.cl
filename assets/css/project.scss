@@ -7,6 +7,75 @@ $jessica-color: #e8c0c2;
 $supplyco-color: #adbeca;
 $disco-color: #dcc5d8;
 
+.text-content {
+  text-align: left;
+  // width: 86%;
+  margin: 0 20px;
+  @media screen and (min-width: $breakpoint-smallish) {
+    margin: 0 auto;
+    width: 75%;
+  }
+  @media screen and (min-width: 1110px) {
+    width: 758px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+
+  &.smaller {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $breakpoint-small) {
+    font-size: 18px;
+    line-height: 1.45;
+
+    &.smaller {
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: $breakpoint-medium) {
+    font-size: 19px;
+  }
+  @media screen and (min-width: 1110px) {
+    font-size: 21px;
+  }
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint-small) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: $breakpoint-medium) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1110px) {
+    font-size: 29px;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 7px;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint-medium) {
+    font-size: 21px;
+  }
+  @media screen and (min-width: 1110px) {
+    font-size: 23px;
+    padding-bottom: 6px;
+  }
+}
+
+h2 + p {
+  margin-top: 1px;
+}
+
 .buttons {
   display: inline-flex;
   width: 100%;
@@ -67,80 +136,9 @@ $disco-color: #dcc5d8;
   }
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.4;
-
-  &.smaller {
-    font-size: 14px;
-  }
-  @media screen and (min-width: $breakpoint-small) {
-    font-size: 18px;
-    line-height: 1.45;
-
-    &.smaller {
-      font-size: 16px;
-    }
-  }
-  @media screen and (min-width: $breakpoint-medium) {
-    font-size: 19px;
-  }
-  @media screen and (min-width: 1110px) {
-    font-size: 21px;
-  }
-}
-
-.text-content {
-  text-align: left;
-  width: 86%;
-  margin: 0 auto;
-  @media screen and (min-width: $breakpoint-small) {
-    width: 75%;
-  }
-  @media screen and (min-width: 1110px) {
-    width: 758px;
-  }
-}
-
-h1 {
-  font-weight: 600;
-  font-size: 22px;
-  padding-bottom: 7px;
-  margin: 0 auto;
-  @media screen and (min-width: $breakpoint-small) {
-    font-size: 24px;
-    padding-bottom: 5px;
-  }
-  @media screen and (min-width: $breakpoint-medium) {
-    font-size: 26px;
-    padding-bottom: 5px;
-  }
-  @media screen and (min-width: 1110px) {
-    font-size: 29px;
-    padding-bottom: 6px;
-  }
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 18px;
-  padding-bottom: 7px;
-  margin: 0 auto;
-  @media screen and (min-width: $breakpoint-medium) {
-    font-size: 21px;
-  }
-  @media screen and (min-width: 1110px) {
-    font-size: 23px;
-    padding-bottom: 6px;
-  }
-}
-
-h2 + p {
-  margin-top: 1px;
-}
-
 .project-intro {
-  margin: 50px auto;
+margin-top: 50px;
+margin-bottom: 50px;
   @media screen and (min-width: $breakpoint-small) {
     margin: 90px auto;
   }
@@ -260,7 +258,6 @@ h2 + p {
 }
 
 .jessica img {
-  border-radius: 0;
   @media screen and (min-width: 665px) {
     width: 625px;
     max-width: 100%;
