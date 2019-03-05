@@ -152,6 +152,23 @@ h2 + p {
       .project-content p {
         font-size: 16px;
         line-height: 1.45; } }
+  .project-content.koppers {
+    background-color: #d3ae92; }
+    .project-content.koppers .button {
+      background-color: #754b3d; }
+    .project-content.koppers .button:hover {
+      background-color: #633b2d; }
+    .project-content.koppers img {
+      box-shadow: 0 0 0px transparent;
+      padding: 15px 20px 60px 20px;
+      width: 950px;
+      max-width: 100%; }
+  .project-content.illustration {
+    background-color: #d3ae92; }
+    .project-content.illustration .button {
+      background-color: #754b3d; }
+    .project-content.illustration .button:hover {
+      background-color: #633b2d; }
   .project-content.simpsons {
     background-color: #bfdfdb; }
     .project-content.simpsons .button {
@@ -164,22 +181,11 @@ h2 + p {
       background-color: #c35b60; }
       .project-content.jessica .button:hover {
         background-color: #ac3f44; }
-  .project-content.koppers {
-    background-color: #d3ae92; }
-      .project-content.koppers .button {
-        background-color: #754b3d; }
-      .project-content.koppers .button:hover {
-        background-color: #633b2d; }
-      .project-content.koppers img {
-        box-shadow: 0 0 0px rgba(0, 0, 0, 0);
-        padding: 15px 20px 60px 20px;}
   .project-content.supplyco {
     background-color: #adbeca; }
-  .project-content.illustration {
-      background-color: #FFE979; }
-    .project-content.illustration .button {
+    .project-content.supplyco .button {
       background-color: #5d7b90; }
-      .project-content.illustration .button:hover {
+      .project-content.supplyco .button:hover {
         background-color: #496171; }
   .project-content.disco {
     background-color: #dcc5d8; }
@@ -212,9 +218,6 @@ h2 + p {
 @media screen and (min-width: 665px) {
   .jessica img {
     width: 625px;
-    max-width: 100%; } }
-  .koppers img {
-    width: 950px;
     max-width: 100%; } }
 
 .sw-hero {

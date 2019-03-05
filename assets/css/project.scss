@@ -137,8 +137,8 @@ h2 + p {
 }
 
 .project-intro {
-margin-top: 50px;
-margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   @media screen and (min-width: $breakpoint-small) {
     margin: 90px auto;
   }
@@ -203,6 +203,35 @@ margin-bottom: 50px;
     @media screen and (min-width: $breakpoint-small) {
       font-size: 16px;
       line-height: 1.45;
+    }
+  }
+
+  &.koppers {
+    background-color: #d3ae92;
+
+    .button {
+      background-color: #754b3d;
+    }
+    .button:hover {
+      background-color: #633b2d;
+    }
+
+    img {
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+      padding: 15px 20px 60px 20px;
+      width: 950px;
+      max-width: 100%;
+    }
+  }
+
+  &.illustration {
+    background-color: #d3ae92;
+
+    .button {
+      background-color: #754b3d;
+    }
+    .button:hover {
+      background-color: #633b2d;
     }
   }
 
@@ -417,10 +446,9 @@ margin-bottom: 50px;
 }
 
 .portfolio-image {
-margin: 0 auto;
-    @media (min-width: $breakpoint-small) {
-      padding-bottom: 18px;
-      padding-top: 18px;
-    }
-
+  margin: 0 auto;
+  @media (min-width: $breakpoint-small) {
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
 }
