@@ -153,6 +153,25 @@ strong {
       margin-left: auto;
       margin-right: auto; } }
 
+.koppers-hp {
+  background-image: url(../KoppersCatalogProjectImageR6.jpg);
+  background-size: 126%;
+  background-repeat: no-repeat;
+  background-position: 5% 25%; }
+  @media screen and (min-width: 650px) {
+    .koppers-hp {
+      background-size: 110%;
+      background-position: 25% 23%; } }
+  @media screen and (min-width: 900px) {
+    .koppers-hp {
+      background-size: 103%;
+      background-position: 25% 20%; } }
+  @media screen and (min-width: 1160px) {
+    .koppers-hp {
+      width: 1160px;
+      margin-left: auto;
+      margin-right: auto; } }
+
 .simpsons-hp {
   background-image: url(../SimpsonsProjectImageL.jpg);
   background-size: 126%;

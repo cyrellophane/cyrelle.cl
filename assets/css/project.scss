@@ -6,17 +6,17 @@ $simpsons-color: #bfdfdb;
 $jessica-color: #e8c0c2;
 $supplyco-color: #adbeca;
 $disco-color: #dcc5d8;
+$portfolio-color: #c1e0cb;
 
 .text-content {
   text-align: left;
-  // width: 86%;
   margin: 0 20px;
   @media screen and (min-width: $breakpoint-smallish) {
     margin: 0 auto;
-    width: 75%;
+    width: 78%;
   }
   @media screen and (min-width: 1110px) {
-    width: 758px;
+    width: 800px;
   }
 }
 
@@ -144,7 +144,8 @@ margin-bottom: 50px;
   }
 
   &.smaller {
-    margin: 10px auto 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
     @media screen and (min-width: $breakpoint-medium) {
       margin-bottom: 60px;
     }
@@ -152,8 +153,11 @@ margin-bottom: 50px;
 }
 
 .project-content {
-  padding: 25px 20px;
+  padding: 25px 0;
   align-self: flex-start;
+  .project-images {
+    padding: 0 20px;
+  }
 
   .columns {
     img {
@@ -184,6 +188,10 @@ margin-bottom: 50px;
 
   img {
     box-shadow: 0 0 33px rgba(0, 0, 0, 0.4);
+    &.noshadow {
+      box-shadow: unset;
+      margin-bottom: 30px;
+    }
     @media screen and (min-width: 1200px) {
       max-width: 1160px;
     }
@@ -245,6 +253,25 @@ margin-bottom: 50px;
       }
     }
   }
+
+  &.portfolio {
+    margin: 0;
+    background-color: #c1e0cb;
+
+    .button {
+      background-color: darken($portfolio-color, 27%);
+
+      &:hover {
+        background-color: darken($portfolio-color, 37%);
+      }
+    }
+    .project-images {
+      padding: 0 8px;
+      @media screen and (min-width: $breakpoint-small) {
+        padding: 0;
+      }
+    }
+  }
   text-align: center;
   @media screen and (min-width: $breakpoint-small) {
     padding-top: 35px;
@@ -265,7 +292,7 @@ margin-bottom: 50px;
 }
 
 .sw-hero {
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   text-align: center;
   background-color: #dcc5d8;
   overflow: hidden;
@@ -387,4 +414,13 @@ margin-bottom: 50px;
   @media (min-width: $breakpoint-small) {
     padding-top: 30px;
   }
+}
+
+.portfolio-image {
+margin: 0 auto;
+    @media (min-width: $breakpoint-small) {
+      padding-bottom: 18px;
+      padding-top: 18px;
+    }
+
 }

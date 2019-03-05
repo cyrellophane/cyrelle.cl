@@ -4,10 +4,10 @@
   @media screen and (min-width: 450px) {
     .text-content {
       margin: 0 auto;
-      width: 75%; } }
+      width: 78%; } }
   @media screen and (min-width: 1110px) {
     .text-content {
-      width: 758px; } }
+      width: 800px; } }
 
 p {
   font-size: 16px;
@@ -106,15 +106,18 @@ h2 + p {
     .project-intro {
       margin: 90px auto; } }
   .project-intro.smaller {
-    margin: 10px auto 40px; }
+    margin-top: 10px;
+    margin-bottom: 60px; }
     @media screen and (min-width: 900px) {
       .project-intro.smaller {
         margin-bottom: 60px; } }
 
 .project-content {
-  padding: 25px 20px;
+  padding: 25px 0;
   align-self: flex-start;
   text-align: center; }
+  .project-content .project-images {
+    padding: 0 20px; }
   @media screen and (min-width: 650px) {
     .project-content .columns img {
       box-shadow: 0 0 18px rgba(0, 0, 0, 0.4); } }
@@ -136,6 +139,9 @@ h2 + p {
         border-radius: 7px; } }
   .project-content img {
     box-shadow: 0 0 33px rgba(0, 0, 0, 0.4); }
+    .project-content img.noshadow {
+      box-shadow: unset;
+      margin-bottom: 30px; }
     @media screen and (min-width: 1200px) {
       .project-content img {
         max-width: 1160px; } }
@@ -158,11 +164,22 @@ h2 + p {
       background-color: #c35b60; }
       .project-content.jessica .button:hover {
         background-color: #ac3f44; }
+  .project-content.koppers {
+    background-color: #d3ae92; }
+      .project-content.koppers .button {
+        background-color: #754b3d; }
+      .project-content.koppers .button:hover {
+        background-color: #633b2d; }
+      .project-content.koppers img {
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+        padding: 15px 20px 60px 20px;}
   .project-content.supplyco {
     background-color: #adbeca; }
-    .project-content.supplyco .button {
+  .project-content.illustration {
+      background-color: #FFE979; }
+    .project-content.illustration .button {
       background-color: #5d7b90; }
-      .project-content.supplyco .button:hover {
+      .project-content.illustration .button:hover {
         background-color: #496171; }
   .project-content.disco {
     background-color: #dcc5d8; }
@@ -170,6 +187,18 @@ h2 + p {
       background-color: #a86f9e; }
       .project-content.disco .button:hover {
         background-color: #8e5685; }
+  .project-content.portfolio {
+    margin: 0;
+    background-color: #c1e0cb; }
+    .project-content.portfolio .button {
+      background-color: #65b27e; }
+      .project-content.portfolio .button:hover {
+        background-color: #4c9865; }
+    .project-content.portfolio .project-images {
+      padding: 0 8px; }
+      @media screen and (min-width: 650px) {
+        .project-content.portfolio .project-images {
+          padding: 0; } }
   @media screen and (min-width: 650px) {
     .project-content {
       padding-top: 35px; } }
@@ -184,9 +213,12 @@ h2 + p {
   .jessica img {
     width: 625px;
     max-width: 100%; } }
+  .koppers img {
+    width: 950px;
+    max-width: 100%; } }
 
 .sw-hero {
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   text-align: center;
   background-color: #dcc5d8;
   overflow: hidden; }
@@ -295,3 +327,10 @@ h2 + p {
   @media (min-width: 650px) {
     .second-column {
       padding-top: 30px; } }
+
+.portfolio-image {
+  margin: 0 auto; }
+  @media (min-width: 650px) {
+    .portfolio-image {
+      padding-bottom: 18px;
+      padding-top: 18px; } }

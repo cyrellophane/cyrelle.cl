@@ -1,0 +1,139 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+<link rel='stylesheet' href='assets/css/style.css'>
+<link rel='stylesheet' href='assets/css/project.css'>
+<link rel='stylesheet' href='assets/css/clients.css'>
+  <title>Portfolio for Cyrelle DeCou</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="top-nav responsive-columns">
+  <a href="/" class="logo"><img src="assets/logo.svg" /></a>
+  <div class="menu">
+    <a href="/">Projects</a>
+    <a href="clients.html">Clients</a>
+    <a href="assets/resume.pdf">Resume</a>
+
+  </div>
+</div>
+
+
+<div class="project-intro text-content">
+  <h1>
+    About this site
+  </h1>
+  <p>
+    I've recently been exploring various skills and concepts on the periphery of my Visual Design experience. Some of these include front end coding, UX Design, and mobile-first and responsive web design. I wanted to make a project where I could use and
+    build upon this new knowledge. This porfolio is the culmination of that process.
+  </p>
+  <p>
+    lorum impsum eetc ghsjkghshdjg
+  </p>
+</div>
+
+<div class="project-content portfolio">
+  <div class="text-content">
+    <h2>
+      1. Wireframing in Sketch
+    </h2>
+    <p>
+      We created a fun "Shark Party" content page as a way to drive traffic to the site.
+    </p>
+    <p>
+      This project started when the copywriter came to me with her concept and inspiration. Together we drafted a creative brief, which I then developed into a high-fidelity comp. I provided creative guidance to the photographer and we worked together to
+      make sure the resulting photographs worked for each placement.
+    </p>
+    <p>
+      Once our team was happy with the design, I worked with the client to finalize it. I handed off web-ready assets and design specs to our front-end team, and performed a design review of the coded site. From there I extended the design to all marketing
+      assets that would drive viewers to the page.
+    </p>
+  </div>
+
+  <div class="project-images">
+    <img class="noshadow" src="assets/wireframe.png"/>
+  </div>
+  <div class="text-content">
+    <h2>
+      2. High-fidelity comp in Sketch
+    </h2>
+    <p>
+      Working with the marketing team, I designed several multi-channel campaigns that supported our big push for Shark Week 2016, including the following examples.
+    </p>
+  </div>
+  <div class="project-images">
+    <img class="noshadow" src="assets/design.png"/>
+  </div>
+  <div class="text-content">
+    <h2>
+      3. Coding up the site
+    </h2>
+    <p>
+      Working with the marketing team, I designed several multi-channel campaigns that supported our big push for Shark Week 2016, including the following examples.
+    </p>
+  </div>
+  <div class="project-images">
+    <img class="noshadow" src="assets/code.png"/>
+  </div>
+  <div class="text-content">
+    <h2>
+      4. Online and responsive
+    </h2>
+    <p>
+      Working with the marketing team, I designed several multi-channel campaigns that supported our big push for Shark Week 2016, including the following examples.
+    </p>
+  </div>
+  <div class="project-images">
+    <img class="noshadow" src="assets/display.jpg"/>
+  </div>
+
+  <div class="buttons one-button">
+    <a class="button left" href="/">
+      &larr; Back to Projects
+    </a>
+  </div>
+
+</div>
+<div class="footer responsive-columns">
+    <a href="mailto:cyrellophane@gmail.com">cyrellophane@gmail.com</a>
+    <div id="social">
+      <a href="https://www.linkedin.com/in/cyrelle/" target="_blank"><svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="linkedin" transform="translate(1.000000, 0.000000)">
+          <circle class="bubble" cx="16.5" cy="16.5" r="15.5"/>
+          <path d="M23.0676692,22.1018942 L19.9558797,22.1018942 L19.9558797,17.5004625 C19.9558797,16.298714 19.4702857,15.4784416 18.4001805,15.4784416 C17.5818647,15.4784416 17.1271579,16.0318784 16.9148571,16.5675261 C16.8343158,16.7572759 16.847609,17.0260881 16.847609,17.2909471 L16.847609,22.1018942 L13.7655338,22.1018942 C13.7655338,22.1018942 13.8065865,13.9564903 13.7655338,13.216071 L16.847609,13.216071 L16.847609,14.6095458 C17.0298045,14.0007653 18.0142857,13.1306836 19.5856241,13.1306836 C21.5354286,13.1306836 23.0676692,14.408332 23.0676692,17.1604941 L23.0676692,22.1018942 L23.0676692,22.1018942 Z M10.6486617,12.1048489 L10.6287218,12.1048489 C9.63642105,12.1048489 8.9924812,11.4245169 8.9924812,10.5639227 C8.9924812,9.68791131 9.65479699,9.02220589 10.6686015,9.02220589 C11.6796692,9.02220589 12.3021053,9.68633006 12.3224361,10.5619462 C12.3224361,11.4229357 11.6796692,12.1048489 10.6486617,12.1048489 L10.6486617,12.1048489 Z M9.34631579,13.216071 L12.0913684,13.216071 L12.0913684,22.1018942 L9.34631579,22.1018942 L9.34631579,13.216071 Z" id="Fill-38"></path>
+
+        </g>
+      </svg></a>
+  </div>
+</div>
+</body>
+</html>

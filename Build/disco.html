@@ -4,10 +4,35 @@
   <meta charset="utf-8">
 
   
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-<link rel='stylesheet' href='assets/6fe04fb2a137dd8d7a7375c160886639.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+<link rel='stylesheet' href='assets/css/project.css'>
+<link rel='stylesheet' href='assets/css/clients.css'>
   <title>Portfolio for Cyrelle DeCou</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -52,17 +77,12 @@
       We created a fun "Shark Party" content page as a way to drive traffic to the site.
     </p>
     <p>
-      This project started when the copywriter came to me with her concept and
-      inspiration. Together we drafted a creative brief, which I then developed
-      into a high-fidelity comp. I provided creative guidance to the photographer
-      and we worked together to make sure the resulting photographs worked
-      for each placement.
+      This project started when the copywriter came to me with her concept and inspiration. Together we drafted a creative brief, which I then developed into a high-fidelity comp. I provided creative guidance to the photographer and we worked together to
+      make sure the resulting photographs worked for each placement.
     </p>
     <p>
-      Once our team was happy with the design, I worked with the client to
-      finalize it. I handed off web-ready assets and design specs to our front-end
-      team, and performed a design review of the coded site. From there I extended
-      the design to all marketing assets that would drive viewers to the page.
+      Once our team was happy with the design, I worked with the client to finalize it. I handed off web-ready assets and design specs to our front-end team, and performed a design review of the coded site. From there I extended the design to all marketing
+      assets that would drive viewers to the page.
     </p>
   </div>
 
@@ -85,16 +105,16 @@
       </div>
     </div>
     <div class="nocaption"></div>
-    <div class="text-content">
-      <h2>
-        Promotional Campaigns
-      </h2>
-      <p>
-        Working with the marketing team, I designed several multi-channel
-        campaigns that supported our big push for Shark Week 2016,
-        including the following examples.
-      <p>
-    </div>
+  </div>
+  <div class="text-content">
+    <h2>
+      Promotional Campaigns
+    </h2>
+    <p>
+      Working with the marketing team, I designed several multi-channel campaigns that supported our big push for Shark Week 2016, including the following examples.
+    </p>
+  </div>
+  <div class="project-images">
     <div class="columns">
       <div>
         <img src="assets/sw_email_dvds.jpg"/>
@@ -109,7 +129,6 @@
         <img src="assets/sw-640x450-dvds.jpg"/>
       </div>
     </div>
-
 
     <div class="columns second-column">
       <div>
@@ -130,6 +149,7 @@
     </div>
     <div class="nocaption"></div>
   </div>
+
 
   <div class="buttons one-button">
     <a class="button left" href="/">

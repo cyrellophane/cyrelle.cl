@@ -3,11 +3,36 @@
 <head>
   <meta charset="utf-8">
 
-  
+
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-<link rel='stylesheet' href='assets/6fe04fb2a137dd8d7a7375c160886639.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+<link rel='stylesheet' href='assets/css/project.css'>
+<link rel='stylesheet' href='assets/css/clients.css'>
   <title>Portfolio for Cyrelle DeCou</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -25,9 +50,12 @@
 
 <div class="blurb">
   Hi, I'm <b>Cyrelle</b>. I’m a designer based in Oakland, CA.
-  I do UI/UX and marketing design, along with some front end development.
+  I do UI/UX, packaging and marketing design, illustration, along with some front end development.
 </div>
 <div class="projects wrapper">
+  <a href="koppers.html" class="project koppers-hp left">
+    <span><strong>Kopper's Chocolates</strong> <br />2018 Product Print Catalog</span>
+  </a>
   <a href="simpsons.html" class="project simpsons-hp right">
     <span><strong>The Simpsons</strong> <br />Streetwear Site</span>
   </a>
