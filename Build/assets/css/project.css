@@ -8,6 +8,14 @@
   @media screen and (min-width: 1110px) {
     .text-content {
       width: 800px; } }
+  .text-content.illustration {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    width: 800px; }
+  .text-content.illustrationColumn {
+    text-align: center;
+    padding-bottom: 0px; }
 
 p {
   font-size: 16px;
@@ -57,17 +65,21 @@ h2 {
 h2 + p {
   margin-top: 1px; }
 
+div
 .buttons {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
   margin-bottom: 5px; }
+  div
   .buttons.one-button {
     justify-content: center; }
   @media screen and (min-width: 450px) {
+    div
     .buttons {
       justify-content: center; } }
   @media screen and (min-width: 900px) {
+    div
     .buttons {
       margin-bottom: 35px; } }
 
@@ -129,6 +141,11 @@ h2 + p {
     @media screen and (min-width: 900px) {
       .project-content .columns .browser {
         border-radius: 5px; } }
+  .project-content .columns.illustration {
+    padding-top: 0px;
+    padding-bottom: 30px; }
+    .project-content .columns.illustration.div {
+      padding: 0px; }
   .project-content .browser {
     border-radius: 3px; }
     @media screen and (min-width: 650px) {
@@ -138,13 +155,16 @@ h2 + p {
       .project-content .browser {
         border-radius: 7px; } }
   .project-content img {
-    box-shadow: 0 0 33px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
     .project-content img.noshadow {
       box-shadow: unset;
       margin-bottom: 30px; }
     @media screen and (min-width: 1200px) {
       .project-content img {
-        max-width: 1160px; } }
+        max-width: 1160px; }
+        .project-content img.email {
+          width: 650px;
+          max-width: 100%; } }
   .project-content p {
     font-size: 14px;
     line-height: 1.35; }
@@ -153,22 +173,32 @@ h2 + p {
         font-size: 16px;
         line-height: 1.45; } }
   .project-content.koppers {
-    background-color: #d3ae92; }
+    background-color: #dcc9df; }
     .project-content.koppers .button {
-      background-color: #754b3d; }
+      background-color: #997f9c; }
     .project-content.koppers .button:hover {
-      background-color: #633b2d; }
+      background-color: #856789; }
     .project-content.koppers img {
       box-shadow: 0 0 0px transparent;
       padding: 15px 20px 60px 20px;
       width: 950px;
       max-width: 100%; }
+  .project-content.packaging {
+    background-color: #abdbcd; }
+    .project-content.packaging .button {
+      background-color: #4fa289; }
+    .project-content.packaging .button:hover {
+      background-color: #3c9077; }
+    .project-content.packaging .no-shadow {
+      box-shadow: 0 0 0px transparent; }
   .project-content.illustration {
-    background-color: #d3ae92; }
+    background-color: #aad7ea; }
     .project-content.illustration .button {
-      background-color: #754b3d; }
+      background-color: #509fbf; }
     .project-content.illustration .button:hover {
-      background-color: #633b2d; }
+      background-color: #3f8faf; }
+    .project-content.illustration .no-shadow {
+      box-shadow: 0 0 0px transparent; }
   .project-content.simpsons {
     background-color: #bfdfdb; }
     .project-content.simpsons .button {
@@ -210,15 +240,24 @@ h2 + p {
       padding-top: 35px; } }
   @media screen and (min-width: 900px) {
     .project-content {
-      padding-top: 40px; } }
+      padding-top: 45px; } }
   @media screen and (min-width: 1110px) {
     .project-content {
-      padding-top: 50px; } }
+      padding-top: 60px; } }
 
 @media screen and (min-width: 665px) {
   .jessica img {
     width: 625px;
     max-width: 100%; } }
+
+@media screen and (min-width: 665px) {
+  .email img {
+    width: 700px;
+    max-width: 100%; } }
+.email .columns {
+  padding-top: 0px; }
+.email .second-column {
+  padding-top: 0px; }
 
 .sw-hero {
   padding: 0 20px 20px 20px;
@@ -237,11 +276,11 @@ h2 + p {
 
 .caption {
   position: relative;
-  margin-top: 28px;
+  margin-top: 24px;
   font-size: 14px;
   line-height: 1.35;
-  padding-bottom: 28px;
-  margin-bottom: 60px;
+  padding-bottom: 24px;
+  margin-bottom: 55px;
   width: 100%; }
   .caption:before {
     content: "";
@@ -262,11 +301,11 @@ h2 + p {
       font-size: 16px;
       width: 65%;
       line-height: 1.45;
-      margin-bottom: 90px; } }
+      margin-bottom: 70px; } }
   @media screen and (min-width: 900px) {
     .caption {
       width: 60%;
-      margin-bottom: 100px; } }
+      margin-bottom: 80px; } }
   @media screen and (min-width: 1110px) {
     .caption {
       width: 666px;
@@ -280,6 +319,8 @@ h2 + p {
   padding-bottom: 50px;
   text-align: left;
   width: 100%; }
+  .nocaption.email {
+    padding-bottom: 35px; }
   @media screen and (min-width: 450px) {
     .nocaption {
       width: 70%;
@@ -291,7 +332,9 @@ h2 + p {
       font-size: 16px;
       width: 65%;
       line-height: 1.45;
-      padding-bottom: 70px; } }
+      padding-bottom: 70px; }
+      .nocaption.email {
+        padding-bottom: 50px; } }
   @media screen and (min-width: 900px) {
     .nocaption {
       width: 60%; } }
@@ -306,6 +349,9 @@ h2 + p {
 
 .columns {
   margin: 0 auto; }
+  .columns.illustration {
+    padding-bottom: 0px;
+    padding-top: 0px; }
   .columns > div {
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
@@ -326,10 +372,10 @@ h2 + p {
       max-width: 1160px; } }
 
 .second-column {
-  padding-top: 40px; }
+  padding-top: 0px; }
   @media (min-width: 650px) {
     .second-column {
-      padding-top: 30px; } }
+      padding-top: 0px; } }
 
 .portfolio-image {
   margin: 0 auto; }

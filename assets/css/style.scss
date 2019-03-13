@@ -189,18 +189,58 @@ opacity: .9;
   }
 }
 
-.koppers-hp {
-  background-image: url(../KoppersCatalogProjectImageR6.jpg);
-  background-size: 126%;
+.packaging-hp {
+  background-image: url(../PackagingProjectImageR.jpg);
+  background-size: 124%;
   background-repeat: no-repeat;
-  background-position: 5% 25%;
+  background-position: 72% 0%;
   @media screen and (min-width: 650px) {
-    background-size: 110%;
-    background-position: 25% 23%;
+    background-size: 104%;
+    background-position: 100% 8%;
   }
   @media screen and (min-width: 900px) {
+    background-size: 100%;
+    background-position: 100% 13%;
+  }
+  @media screen and (min-width: 1160px) {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.illustration-hp {
+  background-image: url(../IllustrationProjectImageL.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 22% 23%;
+  @media screen and (min-width: 650px) {
+    background-size: 105%;
+    background-position: -12% 26%;
+  }
+  @media screen and (min-width: 900px) {
+    background-size: 100%;
+    background-position: 0% 23%;
+  }
+  @media screen and (min-width: 1160px) {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.koppers-hp {
+  background-image: url(../KoppersCatalogProjectImageR4.jpg);
+  background-size: 123%;
+  background-repeat: no-repeat;
+  background-position: 18% 23%;
+  @media screen and (min-width: 650px) {
     background-size: 103%;
-    background-position: 25% 20%;
+    background-position: -22% 26%;
+  }
+  @media screen and (min-width: 900px) {
+    background-size: 100%;
+    background-position: 0% 33%;
   }
   @media screen and (min-width: 1160px) {
     width: 1160px;

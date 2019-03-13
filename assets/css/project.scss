@@ -18,6 +18,16 @@ $portfolio-color: #c1e0cb;
   @media screen and (min-width: 1110px) {
     width: 800px;
   }
+  &.illustration {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    width: 800px;
+  }
+  &.illustrationColumn {
+    text-align: center;
+    padding-bottom: 0px;
+  }
 }
 
 p {
@@ -74,7 +84,7 @@ h2 {
 
 h2 + p {
   margin-top: 1px;
-}
+}div
 
 .buttons {
   display: inline-flex;
@@ -174,6 +184,13 @@ h2 + p {
         border-radius: 5px;
       }
     }
+    &.illustration {
+      padding-top: 0px;
+      padding-bottom: 30px;
+      &.div {
+        padding: 0px;
+      }
+    }
   }
 
   .browser {
@@ -187,13 +204,17 @@ h2 + p {
   }
 
   img {
-    box-shadow: 0 0 33px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     &.noshadow {
       box-shadow: unset;
       margin-bottom: 30px;
     }
     @media screen and (min-width: 1200px) {
       max-width: 1160px;
+      &.email {
+        width: 650px;
+        max-width: 100%;
+      }
     }
   }
 
@@ -207,13 +228,13 @@ h2 + p {
   }
 
   &.koppers {
-    background-color: #d3ae92;
+    background-color: #dcc9df;
 
     .button {
-      background-color: #754b3d;
+      background-color: #997f9c;
     }
     .button:hover {
-      background-color: #633b2d;
+      background-color: #856789;
     }
 
     img {
@@ -224,14 +245,31 @@ h2 + p {
     }
   }
 
-  &.illustration {
-    background-color: #d3ae92;
+  &.packaging {
+    background-color: #abdbcd;
 
     .button {
-      background-color: #754b3d;
+      background-color: #4fa289;
     }
     .button:hover {
-      background-color: #633b2d;
+      background-color: #3c9077;
+    }
+    .no-shadow {
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    }
+  }
+
+  &.illustration {
+    background-color: #aad7ea;
+
+    .button {
+      background-color: #509fbf;
+    }
+    .button:hover {
+      background-color: #3f8faf;
+    }
+    .no-shadow {
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0);
     }
   }
 
@@ -306,10 +344,10 @@ h2 + p {
     padding-top: 35px;
   }
   @media screen and (min-width: $breakpoint-medium) {
-    padding-top: 40px;
+    padding-top: 45px;
   }
   @media screen and (min-width: 1110px) {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }
 
@@ -317,6 +355,21 @@ h2 + p {
   @media screen and (min-width: 665px) {
     width: 625px;
     max-width: 100%;
+  }
+}
+
+.email {
+  img {
+    @media screen and (min-width: 665px) {
+      width: 700px;
+      max-width: 100%;
+    }
+  }
+  .columns {
+    padding-top: 0px;
+  }
+  .second-column {
+    padding-top: 0px;
   }
 }
 
@@ -340,11 +393,11 @@ h2 + p {
 
 .caption {
   position: relative;
-  margin-top: 28px;
+  margin-top: 24px;
   font-size: 14px;
   line-height: 1.35;
-  padding-bottom: 28px;
-  margin-bottom: 60px;
+  padding-bottom: 24px;
+  margin-bottom: 55px;
   width: 100%;
 
   &:before {
@@ -366,11 +419,11 @@ h2 + p {
     font-size: 16px;
     width: 65%;
     line-height: 1.45;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
   @media screen and (min-width: $breakpoint-medium) {
     width: 60%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   @media screen and (min-width: 1110px) {
     width: 666px;
@@ -386,6 +439,10 @@ h2 + p {
   padding-bottom: 50px;
   text-align: left;
   width: 100%;
+
+  &.email {
+    padding-bottom: 35px;
+  }
   @media screen and (min-width: $breakpoint-smallish) {
     width: 70%;
     text-align: center;
@@ -397,6 +454,10 @@ h2 + p {
     width: 65%;
     line-height: 1.45;
     padding-bottom: 70px;
+
+    &.email {
+      padding-bottom: 50px;
+    }
   }
   @media screen and (min-width: $breakpoint-medium) {
     width: 60%;
@@ -414,7 +475,10 @@ h2 + p {
 
 .columns {
   margin: 0 auto;
-
+  &.illustration {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    }
   > div {
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
@@ -439,9 +503,9 @@ h2 + p {
 }
 
 .second-column {
-  padding-top: 40px;
+  padding-top: 0px;
   @media (min-width: $breakpoint-small) {
-    padding-top: 30px;
+    padding-top: 0px;
   }
 }
 
