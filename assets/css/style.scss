@@ -231,16 +231,16 @@ opacity: .9;
 
 .koppers-hp {
   background-image: url(../KoppersCatalogProjectImageR4.jpg);
-  background-size: 123%;
+  background-size: 125%;
   background-repeat: no-repeat;
-  background-position: 18% 23%;
+  background-position: 20% -5%;
   @media screen and (min-width: 650px) {
-    background-size: 103%;
-    background-position: -22% 26%;
+    background-size: 110%;
+    background-position: 32% 10%;
   }
   @media screen and (min-width: 900px) {
-    background-size: 100%;
-    background-position: 0% 33%;
+    background-size: 112%;
+    background-position: 25% 10%;
   }
   @media screen and (min-width: 1160px) {
     width: 1160px;
