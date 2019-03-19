@@ -30,20 +30,20 @@
       margin-right: auto; } }
 
 .clients {
-  margin: 0 auto 45px;
+  margin: 0 auto 25px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   max-width: 1000px; }
   @media screen and (min-width: 650px) {
     .clients {
-      width: 100%;
+      width: 91%;
       margin: 0 auto 65px; } }
   @media screen and (min-width: 900px) {
     .clients {
       padding: 0 20px;
-      width: 90%; } }
+      width: 85%; } }
 
 .clients-other {
   margin: 27px auto 50px;
@@ -58,9 +58,9 @@
       width: 100%; } }
 
 .client {
-  flex: 1 0 40%;
+  flex: 1 0 70px;
   text-align: center;
-  margin: 5px 10px 35px; }
+  margin: 0 18px 0px; }
   @media screen and (min-width: 650px) {
     .client {
       justify-content: space-between; } }
@@ -71,21 +71,21 @@
     margin: -28px auto 25px; }
   .client.unfeatured {
     flex: 1 0 70px;
-    margin: 0 14px 15px; }
+    margin: 0 16px 18px; }
   @media screen and (min-width: 450px) {
     .client {
-      flex: 1 0 30%; } }
+      flex: 1 0 20%; } }
   @media screen and (min-width: 650px) {
     .client {
-      flex: 0 0 20%;
+      flex: 0 0 19%;
       text-align: center;
       justify-content: space-between; } }
   @media screen and (min-width: 900px) {
     .client {
-      flex: 0 0 22%; } }
+      flex: 0 0 15%; } }
 
 .client-logo {
-  max-height: 170px; }
+  max-height: 130px; }
 
 .button-featured {
   display: inline-block;

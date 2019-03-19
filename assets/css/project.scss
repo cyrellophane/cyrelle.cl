@@ -22,7 +22,6 @@ $portfolio-color: #c1e0cb;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 15px;
-    width: 800px;
   }
   &.illustrationColumn {
     text-align: center;
@@ -89,7 +88,8 @@ h2 + p {
 .buttons {
   display: inline-flex;
   width: 100%;
-  justify-content: space-between;
+  // justify-content: space-between;
+    justify-content: center;
 
   &.one-button {
     justify-content: center;
@@ -104,7 +104,7 @@ h2 + p {
 }
 
 .button {
-  margin: 0 0 4px;
+  margin: 0 4px 4px;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -142,7 +142,7 @@ h2 + p {
     }
   }
   @media screen and (min-width: $breakpoint-smallish) {
-    margin: 0 12px 12px;
+    margin: 0 4px 4px;
   }
 }
 
@@ -163,10 +163,16 @@ h2 + p {
 }
 
 .project-content {
-  padding: 25px 0;
+  padding: 6px 0 5% 0 ;
   align-self: flex-start;
+  @media screen and (min-width: $breakpoint-smallish) {
+    padding: 5% 0%;
+  }
   .project-images {
-    padding: 0 20px;
+    padding: 0 0;
+    @media screen and (min-width: $breakpoint-smallish) {
+      padding: 0% 6%;
+    }
   }
 
   .columns {
@@ -204,12 +210,19 @@ h2 + p {
   }
 
   img {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    @media screen and (min-width: $breakpoint-smallish) {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    }
     &.noshadow {
       box-shadow: unset;
       margin-bottom: 30px;
     }
+    @media screen and (min-width: $breakpoint-medium) {
+      box-shadow: 0 0 17px rgba(0, 0, 0, 0.4);
+    }
     @media screen and (min-width: 1200px) {
+      box-shadow: 0 0 19px rgba(0, 0, 0, 0.4);
       max-width: 1160px;
       &.email {
         width: 650px;
@@ -260,7 +273,7 @@ h2 + p {
   }
 
   &.illustration {
-    background-color: #aad7ea;
+    background-color: #b3d9e3;
 
     .button {
       background-color: #509fbf;

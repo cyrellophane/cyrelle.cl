@@ -38,19 +38,19 @@ $simpsons-color: #bfdfdb;
 }
 
 .clients {
-  margin: 0 auto 45px;
+  margin: 0 auto 25px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   max-width: 1000px;
   @media screen and (min-width: $breakpoint-small) {
-    width: 100%;
+    width: 91%;
     margin: 0 auto 65px;
   }
   @media screen and (min-width: $breakpoint-medium) {
     padding: 0 20px;
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -68,9 +68,9 @@ $simpsons-color: #bfdfdb;
 }
 
 .client {
-  flex: 1 0 40%;
+  flex: 1 0 70px;
   text-align: center;
-  margin: 5px 10px 35px;
+  margin: 0 18px 0px;
   @media screen and (min-width: $breakpoint-small) {
     // margin: 5px 16px 35px 16px;
     justify-content: space-between;
@@ -85,23 +85,23 @@ $simpsons-color: #bfdfdb;
 
   &.unfeatured {
     flex: 1 0 70px;
-    margin: 0 14px 15px;
+    margin: 0 16px 18px;
   }
   @media screen and (min-width: $breakpoint-smallish) {
-    flex: 1 0 30%;
+    flex: 1 0 20%;
   }
   @media screen and (min-width: $breakpoint-small) {
-    flex: 0 0 20%;
+    flex: 0 0 19%;
     text-align: center;
     justify-content: space-between;
   }
   @media screen and (min-width: $breakpoint-medium) {
-    flex: 0 0 22%;
+    flex: 0 0 15%;
   }
 }
 
 .client-logo {
-  max-height: 170px;
+  max-height: 130px;
 }
 
 .button-featured {

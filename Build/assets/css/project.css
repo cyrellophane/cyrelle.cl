@@ -11,8 +11,7 @@
   .text-content.illustration {
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 15px;
-    width: 800px; }
+    padding-top: 15px; }
   .text-content.illustrationColumn {
     text-align: center;
     padding-bottom: 0px; }
@@ -69,7 +68,7 @@ div
 .buttons {
   display: inline-flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 5px; }
   div
   .buttons.one-button {
@@ -84,7 +83,7 @@ div
       margin-bottom: 35px; } }
 
 .button {
-  margin: 0 0 4px;
+  margin: 0 4px 4px;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -109,7 +108,7 @@ div
       left: 0; }
   @media screen and (min-width: 450px) {
     .button {
-      margin: 0 12px 12px; } }
+      margin: 0 4px 4px; } }
 
 .project-intro {
   margin-top: 50px;
@@ -125,11 +124,17 @@ div
         margin-bottom: 60px; } }
 
 .project-content {
-  padding: 25px 0;
+  padding: 6px 0 5% 0;
   align-self: flex-start;
   text-align: center; }
+  @media screen and (min-width: 450px) {
+    .project-content {
+      padding: 5% 0%; } }
   .project-content .project-images {
-    padding: 0 20px; }
+    padding: 0 0; }
+    @media screen and (min-width: 450px) {
+      .project-content .project-images {
+        padding: 0% 6%; } }
   @media screen and (min-width: 650px) {
     .project-content .columns img {
       box-shadow: 0 0 18px rgba(0, 0, 0, 0.4); } }
@@ -155,12 +160,19 @@ div
       .project-content .browser {
         border-radius: 7px; } }
   .project-content img {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 0 0px transparent; }
+    @media screen and (min-width: 450px) {
+      .project-content img {
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.3); } }
     .project-content img.noshadow {
       box-shadow: unset;
       margin-bottom: 30px; }
+    @media screen and (min-width: 900px) {
+      .project-content img {
+        box-shadow: 0 0 17px rgba(0, 0, 0, 0.4); } }
     @media screen and (min-width: 1200px) {
       .project-content img {
+        box-shadow: 0 0 19px rgba(0, 0, 0, 0.4);
         max-width: 1160px; }
         .project-content img.email {
           width: 650px;
@@ -192,7 +204,7 @@ div
     .project-content.packaging .no-shadow {
       box-shadow: 0 0 0px transparent; }
   .project-content.illustration {
-    background-color: #aad7ea; }
+    background-color: #b3d9e3; }
     .project-content.illustration .button {
       background-color: #509fbf; }
     .project-content.illustration .button:hover {

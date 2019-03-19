@@ -106,20 +106,24 @@ strong {
   margin-left: auto;
   margin-right: auto; }
   .project span {
-    font-size: 16px;
+    font-size: 17px;
     position: absolute;
     top: 50%;
     margin-top: -16px;
     line-height: 1.25; }
   .project.right span {
-    left: 58%; }
+    left: 58%;
+    margin-right: 15px; }
   .project.left span {
-    left: 6%; }
+    left: 7%;
+    width: 35%; }
   @media screen and (min-width: 450px) {
     .project.right span {
-      left: 60%; }
+      left: 58%;
+      margin-right: 25px; }
     .project.left span {
-      left: 11%; } }
+      left: 11%;
+      width: 35%; } }
   @media screen and (min-width: 650px) {
     .project {
       margin-top: 3px;
@@ -131,7 +135,7 @@ strong {
         top: 50%;
         margin-top: -24px; }
       .project.right span {
-        left: 62%; }
+        left: 58%; }
       .project.left span {
         left: 10%; } }
   @media screen and (min-width: 900px) {
@@ -180,7 +184,7 @@ strong {
   @media screen and (min-width: 650px) {
     .illustration-hp {
       background-size: 105%;
-      background-position: -12% 26%; } }
+      background-position: 0% 26%; } }
   @media screen and (min-width: 900px) {
     .illustration-hp {
       background-size: 100%;
@@ -211,18 +215,18 @@ strong {
       margin-right: auto; } }
 
 .simpsons-hp {
-  background-image: url(../SimpsonsProjectImageL.jpg);
-  background-size: 126%;
+  background-image: url(../SimpsonsProjectImageLR.jpg);
+  background-size: 110%;
   background-repeat: no-repeat;
-  background-position: 15% 25%; }
+  background-position: 90% 25%; }
   @media screen and (min-width: 650px) {
     .simpsons-hp {
-      background-size: 110%;
-      background-position: 25% 23%; } }
+      background-size: 100%;
+      background-position: 0% 23%; } }
   @media screen and (min-width: 900px) {
     .simpsons-hp {
       background-size: 103%;
-      background-position: 25% 20%; } }
+      background-position: 15% 15%; } }
   @media screen and (min-width: 1160px) {
     .simpsons-hp {
       width: 1160px;
@@ -231,7 +235,7 @@ strong {
 
 .jessica-hp {
   background-image: url(../JessicaProjectImageL.jpg);
-  background-size: 119%;
+  background-size: 112%;
   background-repeat: no-repeat;
   background-position: 73% 17%; }
   @media screen and (min-width: 450px) {
@@ -276,22 +280,22 @@ strong {
       margin-right: auto; } }
 
 .sharkweek-hp {
-  background-image: url(../SharkweekProjectImageLv3.jpg);
+  background-image: url(../SharkweekProjectImageR.jpg);
   background-size: 115%;
   background-repeat: no-repeat;
-  background-position: 10% 50%; }
+  background-position: 55% 50%; }
   @media screen and (min-width: 540px) {
     .sharkweek-hp {
-      background-size: 111%;
-      background-position: 88% 50%; } }
+      background-size: 112%;
+      background-position: 60% 50%; } }
   @media screen and (min-width: 650px) {
     .sharkweek-hp {
-      background-size: 108%;
-      background-position: 60% 50%; } }
+      background-size: 115%;
+      background-position: 50% 50%; } }
   @media screen and (min-width: 900px) {
     .sharkweek-hp {
-      background-size: 100%;
-      background-position: 40% 51%; } }
+      background-size: 108%;
+      background-position: 50% 51%; } }
   @media screen and (min-width: 1160px) {
     .sharkweek-hp {
       width: 1160px;
