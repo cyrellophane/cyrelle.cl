@@ -117,14 +117,14 @@ div
     .project-intro {
       margin: 90px auto; } }
   .project-intro.smaller {
-    margin-top: 10px;
+    margin-top: -15px;
     margin-bottom: 60px; }
     @media screen and (min-width: 900px) {
       .project-intro.smaller {
         margin-bottom: 60px; } }
 
 .project-content {
-  padding: 6px 0 5% 0;
+  padding: 5% 0 5% 0;
   align-self: flex-start;
   text-align: center; }
   @media screen and (min-width: 450px) {
@@ -160,7 +160,7 @@ div
       .project-content .browser {
         border-radius: 7px; } }
   .project-content img {
-    box-shadow: 0 0 0px transparent; }
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3); }
     @media screen and (min-width: 450px) {
       .project-content img {
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.3); } }
@@ -213,6 +213,9 @@ div
       box-shadow: 0 0 0px transparent; }
   .project-content.simpsons {
     background-color: #bfdfdb; }
+    @media screen and (min-width: 450px) {
+      .project-content.simpsons {
+        background-color: #bfdfdb; } }
     .project-content.simpsons .button {
       background-color: #63b1a7; }
       .project-content.simpsons .button:hover {

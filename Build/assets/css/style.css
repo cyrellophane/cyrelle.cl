@@ -13,10 +13,16 @@ a {
   a.button {
     color: #fff; }
 
-strong {
-  font-weight: 600; }
+h3 {
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  line-height: 1.15; }
   @media screen and (min-width: 650px) {
-    strong {
+    h3 {
+      font-weight: 600; } }
+  @media screen and (min-width: 900px) {
+    h3 {
       font-weight: 500; } }
 
 .responsive-columns {
@@ -108,9 +114,9 @@ strong {
   .project span {
     font-size: 17px;
     position: absolute;
-    top: 50%;
+    top: 39%;
     margin-top: -16px;
-    line-height: 1.25; }
+    line-height: 1.20; }
   .project.right span {
     left: 58%;
     margin-right: 15px; }
@@ -132,7 +138,7 @@ strong {
         font-size: 22px;
         font-weight: 100;
         position: absolute;
-        top: 50%;
+        top: 44%;
         margin-top: -24px; }
       .project.right span {
         left: 58%; }
@@ -145,7 +151,7 @@ strong {
         font-size: 25px;
         font-weight: 100;
         position: absolute;
-        top: 50%;
+        top: 46%;
         margin-top: -27px; }
       .project.right span {
         left: 59%; }
