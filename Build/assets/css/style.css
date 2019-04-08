@@ -14,16 +14,14 @@ a {
     color: #fff; }
 
 h3 {
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 0px;
   margin-bottom: 3px;
   line-height: 1.15; }
-  @media screen and (min-width: 650px) {
-    h3 {
-      font-weight: 600; } }
   @media screen and (min-width: 900px) {
     h3 {
-      font-weight: 500; } }
+      font-size: 1.2em;
+      margin-bottom: 7px; } }
 
 .responsive-columns {
   text-align: left;
@@ -113,6 +111,7 @@ h3 {
   margin-right: auto; }
   .project span {
     font-size: 17px;
+    font-weight: 100;
     position: absolute;
     top: 39%;
     margin-top: -16px;
@@ -148,7 +147,7 @@ h3 {
     .project {
       height: 310px; }
       .project span {
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 100;
         position: absolute;
         top: 46%;
@@ -228,11 +227,11 @@ h3 {
   @media screen and (min-width: 650px) {
     .simpsons-hp {
       background-size: 100%;
-      background-position: 0% 23%; } }
+      background-position: 100% 23%; } }
   @media screen and (min-width: 900px) {
     .simpsons-hp {
-      background-size: 103%;
-      background-position: 15% 15%; } }
+      background-size: 102%;
+      background-position: 70% 15%; } }
   @media screen and (min-width: 1160px) {
     .simpsons-hp {
       width: 1160px;

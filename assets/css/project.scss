@@ -512,6 +512,7 @@ h2 + p {
     column-count: 2;
     column-gap: 19px;
     column-fill: auto;
+    -moz-column-fill: balance;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1160px;

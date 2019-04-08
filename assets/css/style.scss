@@ -24,15 +24,17 @@ a {
 }
 
 h3 {
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 0px;
   margin-bottom: 3px;
   line-height: 1.15;
-  @media screen and (min-width: $breakpoint-small) {
-  font-weight: 600;
-  }
+  // @media screen and (min-width: $breakpoint-small) {
+  // font-weight: 600;
+  // }
   @media screen and (min-width: $breakpoint-medium) {
-  font-weight: 500;
+  // font-weight: 500;
+  font-size: 1.2em;
+    margin-bottom: 7px;
   }
 }
 
@@ -135,6 +137,7 @@ opacity: .9;
   margin-right: auto;
   span {
     font-size: 17px;
+    font-weight: 100;
     position: absolute;
     top: 39%;
     margin-top: -16px;
@@ -178,7 +181,7 @@ opacity: .9;
   @media screen and (min-width: $breakpoint-medium) {
     height: 310px;
     span {
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 100;
       position: absolute;
       top: 46%;
@@ -267,11 +270,11 @@ opacity: .9;
   background-position: 90% 25%;
   @media screen and (min-width: $breakpoint-small) {
     background-size: 100%;
-    background-position: 0% 23%;
+    background-position: 100% 23%;
   }
   @media screen and (min-width: $breakpoint-medium) {
-    background-size: 103%;
-    background-position: 15% 15%;
+    background-size: 102%;
+    background-position: 70% 15%;
   }
   @media screen and (min-width: 1160px) {
     width: 1160px;

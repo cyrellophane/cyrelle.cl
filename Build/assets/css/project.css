@@ -381,7 +381,8 @@ div
       padding-top: 18px;
       column-count: 2;
       column-gap: 19px;
-      column-fill: auto; } }
+      column-fill: auto;
+      -moz-column-fill: balance; } }
   @media screen and (min-width: 1200px) {
     .columns {
       max-width: 1160px; } }
